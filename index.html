@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<title>Formulaire de Renseignement</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h2>Civilité</h2>
+	<form method="POST" action="traitement.php">
+     <fieldset id="section1">
+     	<legend> Informations personnelles</legend>
+			<label>Nom et Prénom:</label> <input type="text" name="Nom et Prénom"><br/>Date et lieu de naissance:<input type="date" name="" required="required">
+			<input type="text" name="pseudo" id="pseudo"/>
+			<br/>
+			<label>Adresse e-mail</label><input type="text" name="Adresse e-mail" required="required"><br/>
+			 <label for="pass">Password (8 characters minimum):</label>
+	         <input type="password" id="pass" name="password" minlength="8" required><br/>
+		
+	<p>sexe:
+		<input type="radio" name="gender" value="homme" checked="homme" required="required">homme<br>
+		<input type="radio" name="gender" value="femme" checked="femme" required="required">femme<br>
+	</p>
+     </fieldset>
+	</form>
+	<h2>Dernier diplome</h2>
+	<form method="post" id="id_form" action="required">
+		<fieldset id="section2">
+			<select name="diplome">
+				<option value="aucun">aucun</option>
+				<option value="BAC">BAC</option>
+				<option value="BAC+3" selected="selected">BAC+3</option>
+				<option value="Master">Master</option>
+				<option value="BEPC">BEPC</option>
+				<option value="Doctorat">Doctorat</option>
+			</select>
+		</fieldset>
+	</form>
+	<h2>Centre d'intérêt</h2>
+	<form method="post" id="id_form">
+		<fieldset id="section3">
+		<legend>Veuillez sélectionner vos intérêts :</legend>
+  <div>
+	    <input type="checkbox" id="sport" name="interest" value="sport">
+	    <label for="sport">sport</label>
+  </div>
+  <div>
+	    <input type="checkbox" id="music" name="interest" value="music">
+	    <label for="music">Musique</label>
+  </div>  
+  <div>
+	    <input type="checkbox" id="lecture" name="interest" value="lecture">
+	    <label for="lecture">lecture</label>
+  </div>
+  <div>
+	    <input type="checkbox" id="cinéma" name="interest" value="cinéma">
+	    <label for="cinéma">cinéma</label>
+  </div>
+  <div>
+	    <input type="checkbox" id="théatre" name="interest" value="théatre">
+	    <label for="théatre">théatre</label>
+  </div>
+		</fieldset>
+	</form>
+	<form method="post" id="id_form">
+		<fieldset id="section4">
+			<legend>Entrez votre commentaire</legend>
+			<textarea name="message" placeholder="saisissez votre commentaire" rows="10" cols="70" minlength="100" required="required"></textarea><br/>
+			<input type="checkbox" id="j'accepte" name="interest" value="j'accepte" required="required">
+            <label for="théatre">j'accepte les conditions d'utilisation</label><br/>
+            <input type="submit">
+		</fieldset>
+	</form>
+	<footer>
+		
+	</footer>
+</body>
+</html>
